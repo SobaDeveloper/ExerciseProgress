@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ExerciseProgress</string>
+
+    <!-- Workout List Screen-->
+    <string name="workout_list_screen_title">My Workouts</string>
+    <string name="workout_card_item_label_rest_day">REST DAY</string>
+    <string name="workout_card_item_untitled">Untitled Workout</string>
+
+    <!-- Workout Summary Screen-->
+    <string name="workout_summary_screen_title">Workout History</string>
+    <string name="workout_summary_screen_no_sessions">No workout data</string>
+    <string name="workout_summary_stat_duration">Duration</string>
+    <string name="workout_summary_stat_calories">Calories</string>
+    <string name="workout_summary_state_average_heartrate">Avg HR</string>
+    <string name="workout_summary_header_finished">Finished %1$s</string>
+
+    <!-- Exercise Set Summary-->
+    <string name="exercise_set_summary_title">Sets Completed</string>
+    <string name="exercise_set_summary_weight">lbs</string>
+    <string name="exercise_set_summary_reps">reps</string>
+    <string name="exercise_set_summary_name_default">Exercise</string>
+</resources>
