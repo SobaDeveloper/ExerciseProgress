@@ -5,3 +5,4 @@ import androidx.compose.ui.unit.dp
 
 val CardShape = RoundedCornerShape(16.dp)
 val SectionShape = RoundedCornerShape(12.dp)
+val BadgeShape = RoundedCornerShape(8.dp)

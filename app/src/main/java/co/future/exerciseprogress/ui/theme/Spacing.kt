@@ -14,8 +14,6 @@ data class ComponentSpacing(
     val md: Dp = 16.dp,
     val lg: Dp = 20.dp,
     val xl: Dp = 24.dp,
-
-    val chatMessageIndent: Dp = 64.dp,
 )
 
 val LocalSpacing = staticCompositionLocalOf { ComponentSpacing() }

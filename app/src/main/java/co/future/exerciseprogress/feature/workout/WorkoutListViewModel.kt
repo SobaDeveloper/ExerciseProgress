@@ -1,6 +1,5 @@
 package co.future.exerciseprogress.feature.workout
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.data.models.workout.Workout
@@ -32,7 +31,6 @@ class WorkoutListViewModel @Inject constructor(
 
     fun selectWorkout(workoutId: String) {
         val workout = _workouts.value.find { it.id == workoutId }
-        Log.d("yoyo", workout.toString())
         _workoutSummaries.value = workout?.summaries ?: emptyList()
     }
 }

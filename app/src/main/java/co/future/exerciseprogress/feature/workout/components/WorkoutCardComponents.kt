@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -26,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import co.future.exerciseprogress.R
 import co.future.exerciseprogress.feature.common.GradientOverlay
 import co.future.exerciseprogress.feature.common.Tag
+import co.future.exerciseprogress.ui.theme.CardShape
 import co.future.exerciseprogress.ui.theme.Green500
 import co.future.exerciseprogress.ui.theme.Purple500
 import co.future.exerciseprogress.ui.theme.Spacing
@@ -122,7 +122,7 @@ fun WorkoutMetadataRow(
         if (workout.summaries.isNotEmpty()) {
             Surface(
                 onClick = onCardClick,
-                shape = RoundedCornerShape(16.dp),
+                shape = CardShape,
                 color = if (workout.images.isNotEmpty())
                     Color.White.copy(alpha = 0.2f)
                 else

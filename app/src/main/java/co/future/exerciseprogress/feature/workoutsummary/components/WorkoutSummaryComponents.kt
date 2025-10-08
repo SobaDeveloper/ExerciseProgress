@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -22,6 +21,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import co.future.exerciseprogress.ui.theme.BadgeShape
+import co.future.exerciseprogress.ui.theme.SectionShape
+import co.future.exerciseprogress.ui.theme.Spacing
 import com.example.data.models.workout.WorkoutCompletionState
 
 @Composable
@@ -35,10 +37,10 @@ fun StatCard(
     Surface(
         modifier = modifier,
         color = MaterialTheme.colorScheme.surface,
-        shape = RoundedCornerShape(12.dp)
+        shape = SectionShape
     ) {
         Column(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(Spacing.md),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Box(
@@ -56,7 +58,7 @@ fun StatCard(
                 )
             }
 
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(Spacing.sm))
 
             Text(
                 text = value,
@@ -99,7 +101,7 @@ fun CompletionBadge(completionState: WorkoutCompletionState) {
 
     Surface(
         color = color.copy(alpha = 0.15f),
-        shape = RoundedCornerShape(8.dp)
+        shape = BadgeShape
     ) {
         Text(
             text = text.uppercase(),
