@@ -1,3 +1,43 @@
+# ExerciseProgress
+![exerciseprogress](https://github.com/user-attachments/assets/a5197d54-81a4-474d-b6b9-424a8edf4668)
+
+## Built With
+
+- **[Kotlin](https://kotlinlang.org/)** – First class and official programming language for Android development
+- **[Jetpack Compose](https://developer.android.com/jetpack/compose)** – Modern toolkit for building native UI
+- **[Coroutines](https://developer.android.com/kotlin/coroutines)** – Asynchronous programming and concurrency
+- **[Flow](https://developer.android.com/kotlin/flow)** – Reactive streams for handling asynchronous data
+- **[Jetpack Libraries](https://developer.android.com/jetpack)**
+  - [Navigation Compose](https://developer.android.com/guide/navigation) - Type-safe navigation for Compose
+  - [Material 3](https://developer.android.com/jetpack/androidx/releases/compose-material3) - Material Design 3 components
+- **[Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization)** – Kotlin's native serialization library.
+- **[Hilt](https://developer.android.com/training/dependency-injection/hilt-android)** – Dependency injection framework built on top of Dagger  
+- **[Coil](https://coil-kt.github.io/coil/)** – Lightweight, Compose-first image loading library for Android     
+- **[JUnit](https://junit.org/junit4/)** - Unit testing framework
+- **[MockK](https://mockk.io/)** - Mocking library for Kotlin
+
+## Architecture Overview
+
+```
+📦 ExerciseProgress
+├── 🧩 app          # Presentation layer - UI, navigation, and interaction
+│   ├── di          # Dependency injection (Hilt modules)
+│   ├── feature     # Jetpack Compose screens, UI logic, and ViewModels
+│   ├── navigation  # Navigation graph and route definitions
+│   └── ui          # Material 3 styling, theming, and components
+│
+├── 🧩 domain       # Business logic and use cases
+│   ├── usecase     # UseCases coordinating business rules
+│   └── repo        # Repositories
+│
+├── 🧩 data         # Data sources
+│   ├── datasource   # Local data source
+│   └── models       # DTOs
+│
+├── 🧩 core         # Shared utilities and common functionality
+│   └── util        # Date formatting, extension functions, etc.
+```
+
 # Android Engineering Project - Exercise Progress
 
 In this project, we've set up a realistic scenario of the type of feature development we'd do here at Future. We'd like you to do the brainstorming, planning, building, and presenting. Basically, we're attempting to create a compressed microcosm of working at Future!
