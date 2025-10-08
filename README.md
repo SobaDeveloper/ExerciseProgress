@@ -38,6 +38,9 @@
 │   └── util        # Date formatting, extension functions, etc.
 ```
 
+# Comments
+I took the initiative of modularizing the project for better separation of concerns and maintainability. If the project included network calls, I would expand the data module with dedicated service and database packages. For a larger app, I would introduce a core-ui module to host reusable UI components along with shared styling, typography, and theming. and add a feature module to organize distinct features and their corresponding screens.
+
 # Android Engineering Project - Exercise Progress
 
 In this project, we've set up a realistic scenario of the type of feature development we'd do here at Future. We'd like you to do the brainstorming, planning, building, and presenting. Basically, we're attempting to create a compressed microcosm of working at Future!
